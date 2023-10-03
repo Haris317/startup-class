@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My  Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightblue;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .image {
+            text-align: center;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .image p {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My  Gallery</h1>
+        <div class="gallery">
+            <div class="image">
+                <img src="./Image/my pic.jpg" alt="Location 1">
+                <p><strong>Location 1</strong><br>Date: October 2, 2023<br>Details: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, at dignissimos. Temporibus, nesciunt. Sapiente voluptate eum molestiae exercitationem dolorem. Odit facilis numquam dignissimos hic assumenda eum id rerum nam officia.</p>
+            </div>
+            <!-- Repeat the following block for each image -->
+            <div class="image">
+                <img src="./Image/my pic 2.jpg" alt="Location 2">
+                <p><strong>Location 2</strong><br>Date: October 2, 2023<br>Details: Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed minus architecto iure asperiores est nobis quidem deleniti dolorem exercitationem, tempora magni laborum a sit sapiente cupiditate vitae ipsa eos.</p>
+            </div>
+            <!-- Add similar blocks for the remaining images -->
+        </div>
+    </div>
+</body>
+</html>
